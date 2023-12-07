@@ -1,0 +1,57 @@
+.task-board {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.task-categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+.task-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  margin: 5px;
+  position: relative;
+}
+.drag-scale {
+  transform: scale(1.05);
+}
+
+.priority-urgent,
+.priority-high,
+.priority-medium,
+.priority-low,
+.priority-verylow {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5%;
+}
+.priority-urgent {
+  color: white;
+  border-radius: 60%;
+  background: red;
+  width: 1rem;
+  height: 1.05rem;
+}
+.priority-high {
+  color: red;
+}
+.priority-medium {
+  color: orange;
+}
+.priority-low {
+  color: green;
+}
+.priority-verylow {
+  color: greenyellow;
+}
